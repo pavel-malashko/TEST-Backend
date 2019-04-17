@@ -13,3 +13,5 @@
 - npm run build-start (for build project) 
 
 - npm start
+
+###  Link to task https://gist.github.com/pixelplex/0536beffba1551c01b58a244b1f325fd
