@@ -14,4 +14,4 @@
 
 - npm start
 
-###  Link to task https://gist.github.com/pixelplex/0536beffba1551c01b58a244b1f325fd
+-  Link to task https://gist.github.com/pixelplex/0536beffba1551c01b58a244b1f325fd
