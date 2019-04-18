@@ -9,8 +9,19 @@ const port = 8080,
       app = express(),
       article = new ArticleController();
 
-mongoose.connect('mongodb://localhost/blog', { useNewUrlParser: true });
+
+mongoose.connect('mongodb://localhost/blog', { useNewUrlParser: true }, function(err) {
+    if (err) console.log(err);
+});
+
+const db = mongoose.connection;
+
+db.on('error', err => {
+    console.log('error', err)
+});
+
 mongoose.set('useFindAndModify', false);
+
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
