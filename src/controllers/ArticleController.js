@@ -29,7 +29,7 @@ class ArticleController {
     }
 
 
-    async create(req, res) {    
+    create(req, res) {    
 
         let data = req.body,
               article = new Article({
@@ -39,7 +39,7 @@ class ArticleController {
         
         try {
 
-            await article.save(article);
+            article.save(article);
             res.json({ article: article });
 
         }
